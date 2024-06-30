@@ -10,7 +10,7 @@ Situs ini di buat dan di rancang sesederhana mungkin untuk kepentingan umum.
 Contacts Person : 
 Name : Muhammad Salahuddin Al-Ayubby Noer
 Phone : +62-895-3232-22356
-WhatsApp: wa.me/0895323222356
+WhatsApp: https://wa.me/0895323222356
 email : cmfnoer@gmail.com 
 YouTube : https://www.youtube.com/cmfina
 
