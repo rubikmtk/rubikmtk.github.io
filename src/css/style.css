@@ -14,8 +14,10 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start; /* Pastikan elemen berada di bagian atas */
     margin: 20px;
+    gap: 20px; /* Jarak antar elemen */
 }
 
 .form-container {
@@ -55,16 +57,41 @@ form button:hover {
     background-color: #0088cc;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antara kolom */
+}
+
 .mining-price, .faucet {
     background: #fff;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 200px;
     text-align: center;
+}
+
+.mining-price {
+    width: 300px;
+}
+
+.faucet {
+    width: 100%;
+    max-width: 340px; /* Lebar maksimal Faucet, lebih besar dari Mining Harga */
 }
 
 .mining-price h2, .faucet h2 {
     margin-top: 0;
-      }
-  
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faucet {
+        max-width: 100%;
+    }
+}
