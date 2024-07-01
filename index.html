@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Dana/OVO/GoPay Indonesia</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>FAUCET DANA/OVO/GOPAY INDONESIA</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>DAFTAR</h2>
+            <form id="registration-form">
+                <label for="username">Username :</label>
+                <input type="text" id="username" name="username" pattern="[A-Za-z]+" title="Hanya huruf yang diperbolehkan" required>
+                
+                <label for="phone">Nomor Handphone:</label>
+                <input type="text" id="phone" name="phone" pattern="\d+" title="Hanya angka yang diperbolehkan" required>
+                
+                <label for="wallet">List e Wallet:</label>
+                <select id="wallet" name="wallet" required>
+                    <option value="dana">Dana</option>
+                    <option value="ovo">OVO</option>
+                    <option value="gopay">GoPay</option>
+                </select>
+                
+                <div class="button-group">
+                    <button type="button" id="gen-button">GEN</button>
+                    <button type="submit" id="submit-button">SUBMIT</button>
+                    <button type="button" id="tarik-button">PENARIKAN</button>
+                </div>
+            </form>
+        </div>
+        <div class="mining-price">
+            <h2>MINING HARGA</h2>
+        </div>
+        <div class="faucet">
+            <h2>FAUCET</h2>
+        </div>
+    </div>
+    <script src="src/java/script.js"></script>
+</body>
+</html>
